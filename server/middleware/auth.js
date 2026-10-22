@@ -4,7 +4,10 @@ const path = require('path');
 
 dotenv.config({ path: path.join(__dirname, '.env') });
 
-const SECRET = process.env.JWT_SECRET || 'dev-secret';
+if (!process.env.JWT_SECRET) {
+  throw new Error("ERROR: JWT_SECRET ist in der .env-Datei nicht definiert!");
+}
+const secret = process.env.JWT_SECRET;
 
 module.exports = function authMiddleware(req, res, next) {
   const auth = req.headers.authorization;

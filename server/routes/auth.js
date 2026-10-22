@@ -92,7 +92,10 @@ router.post(
       }
 
       const payload = { id: user.id, username: user.username, email: user.email };
-      const secret = process.env.JWT_SECRET || 'dev-secret';
+      if (!process.env.JWT_SECRET) {
+          throw new Error("KRITISCHER FEHLER: JWT_SECRET ist in der .env-Datei nicht definiert!");
+          }
+            const secret = process.env.JWT_SECRET;
       const token = jwt.sign(payload, secret, { expiresIn: '1h' });
 
       return res.json({ token, user: payload });
