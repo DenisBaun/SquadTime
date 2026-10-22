@@ -1,0 +1,17 @@
+[2026-07-22T13:07:11.789Z] /api/users/friends/accept called, req.user={"id":4,"username":"tester2","email":"tester2@test.com","iat":1784724893,"exp":1784728493} body={"fromUserId":3}
+[2026-07-22T13:07:16.750Z] /api/users/friends/accept called, req.user={"id":4,"username":"tester2","email":"tester2@test.com","iat":1784724893,"exp":1784728493} body={"fromUserId":3}
+[2026-07-22T13:07:17.717Z] /api/users/friends/accept called, req.user={"id":4,"username":"tester2","email":"tester2@test.com","iat":1784724893,"exp":1784728493} body={"fromUserId":3}
+[2026-07-22T13:07:30.626Z] /api/users/friends/accept called, req.user={"id":4,"username":"tester2","email":"tester2@test.com","iat":1784724893,"exp":1784728493} body={"fromUserId":3}
+[2026-07-22T13:07:31.127Z] /api/users/friends/accept called, req.user={"id":4,"username":"tester2","email":"tester2@test.com","iat":1784724893,"exp":1784728493} body={"fromUserId":3}
+[2026-07-22T13:15:28.234Z] /api/users/friends/accept called, req.user={"id":4,"username":"tester2","email":"tester2@test.com","iat":1784724893,"exp":1784728493} body={"fromUserId":3}
+[2026-07-22T13:17:20.150Z] /api/users/friends/accept called, req.user={"id":4,"username":"tester2","email":"tester2@test.com","iat":1784726240,"exp":1784729840} body={"fromUserId":3}
+[2026-07-22T13:17:45.109Z] /api/users/friends/accept called, req.user={"id":4,"username":"tester2","email":"tester2@test.com","iat":1784726265,"exp":1784729865} body={"fromUserId":3}
+[2026-07-22T13:17:45.145Z] TRANSACTION ERROR: RequestError: The parameter name a has already been declared. Parameter names must be unique
+    at Request.input (C:\Users\Denis\Desktop\SquadTime\squadtime-gaming-planner\server\node_modules\mssql\lib\base\request.js:137:13)
+    at C:\Users\Denis\Desktop\SquadTime\squadtime-gaming-planner\server\routes\users.js:128:16
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-07-22T13:17:45.147Z] HANDLER ERROR: RequestError: The parameter name a has already been declared. Parameter names must be unique
+    at Request.input (C:\Users\Denis\Desktop\SquadTime\squadtime-gaming-planner\server\node_modules\mssql\lib\base\request.js:137:13)
+    at C:\Users\Denis\Desktop\SquadTime\squadtime-gaming-planner\server\routes\users.js:128:16
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-07-22T13:18:13.676Z] /api/users/friends/accept called, req.user={"id":4,"username":"tester2","email":"tester2@test.com","iat":1784726293,"exp":1784729893} body={"fromUserId":3}
